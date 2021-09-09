@@ -56,10 +56,12 @@ const Note = (props) => {
 
     return (
         <>
-            <div className="note p-3 m-3" onClick={handleOpen}>
-                <h4>{props.title}</h4>
-                <br />
-                <p className="note-paragraph">{props.content}</p>
+            <div className="note p-3 m-3">
+                <div onClick={handleOpen} >
+                    <h4>{props.title}</h4>
+                    <br />
+                    <p className="note-paragraph">{props.content}</p>
+                </div>
                 <div className="delete-container">
                     <IconButton onClick={deleteNote} title="Delete" className="delete-btn" ><DeleteOutlineIcon className="delete-icon" /></IconButton>
                 </div>
