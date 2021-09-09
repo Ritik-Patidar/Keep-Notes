@@ -106,7 +106,11 @@
 .delete-btn{
   display: none !important;
 }
-
+@media only screen and (max-width:426px){
+  .delete-btn{
+    display: block !important;
+  }
+}
 .delete-btn:hover ,.delete-icon:hover{
   color: red;
 }
